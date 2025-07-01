@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #1a1a1a;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.string {
+    width: 550px;
+    margin: 0 auto;
+}
+
+svg {
+    /* background-color: red; */
+
+}
