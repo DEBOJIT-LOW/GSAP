@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background-color: #1a1a1a;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.cursor {
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3px;
+}
+
+.box {
+    /* background-color: chocolate; */
+    background-image: url(img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 80vw;
+    position: relative;
+
+}
+
+.page2,
+.page3 {
+    height: 100%;
+    width: 100%;
+}
+
+.page2 {
+    background-color: #2a2a2a;
+}
+
+.page3 {
+    background-color: #2e2e2e;
+}
+
+/* Why adding overlay??
+It is because whenever we scal up to the box, then automatically mouseleave triggers which does not serve our purpose
+Overlay is given a higher z-index in order to make sure that the cursor is always with the box */
+.overlay {
+    height: 100%;
+    width: 100%;
+    /* background-color: gray; */
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+}
