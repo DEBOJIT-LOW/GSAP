@@ -1,12 +1,12 @@
 let tl = gsap.timeline()
 
-tl.to(".content svg", {
-    duraton: 0,
-    delay: 0,
-    zIndex: 0
-})
 
+tl.to(".click", {
+    delay: 0,
+    zIndex: 4
+})
 tl.from(".click", {
+    delay: 0,
     duration: 0.3,
     opacity: 0,
     width: -40,
@@ -26,7 +26,7 @@ tl.from(".click svg", {
 
 tl.pause();
 
-let contentSVG = document.querySelector(".content svg")
+let contentSVG = document.querySelector(".icon")
 let close = document.querySelector(".click svg")
 
 contentSVG.addEventListener('click', function () {

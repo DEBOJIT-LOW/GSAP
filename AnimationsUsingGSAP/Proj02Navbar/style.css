@@ -88,7 +88,6 @@ body {
     border-bottom: 5px solid rgba(240, 240, 240, 0.26);
 }
 
-
 .navbar .content {
     display: flex;
     justify-content: space-between;
@@ -101,13 +100,30 @@ body {
     font-size: 1em;
 }
 
-.content svg {
+.content .icon {
     position: fixed;
     right: 60px;
     height: 40px;
+    width: 40px;
     z-index: 1;
     cursor: pointer;
+    /* background-color: rgb(33, 152, 152); */
 }
+
+.icon img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+/*.content svg {
+    position: fixed;
+    right: 60px;
+    height: 40px;
+    width: 40px;
+     z-index: 1; 
+    cursor: pointer;
+}*/
 
 .navbar .click {
     position: fixed;
@@ -131,7 +147,7 @@ body {
 .click svg {
     position: fixed;
     height: 20px;
-    right: 30px;
+    right: 60px;
     top: 20px;
     padding: 5px;
     background-color: rgb(255, 255, 255);
